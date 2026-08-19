@@ -1,0 +1,111 @@
+#ig-limiter-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  background: linear-gradient(135deg, #405de6, #5b51d8, #833ab4, #c13584, #e1306c, #fd1d1d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.ig-limiter-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 36px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.ig-limiter-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.ig-limiter-card h1 {
+  font-size: 22px;
+  margin: 8px 0;
+  color: #1a1a1a;
+}
+
+.ig-limiter-sub {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.ig-limiter-task {
+  background: #f7f7fa;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ig-limiter-task-label {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.ig-limiter-breath-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 3.8s ease-in-out;
+  transform: scale(0.85);
+}
+
+.ig-breath-expand {
+  transform: scale(1.15);
+}
+
+.ig-limiter-timer {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+#ig-limiter-unlock-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #833ab4;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: not-allowed;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  transition: opacity 0.2s;
+}
+
+#ig-limiter-unlock-btn:not(:disabled) {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#ig-limiter-leave-btn {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#ig-limiter-leave-btn:hover {
+  background: #f5f5f5;
+}
